@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_add_ls_company">
+
+    <fragment
+        android:id="@+id/navigation_add_ls_company"
+        android:name="com.yamatoapps.lightandsoundbooking.ui.AddLSCompanyFragment"
+        android:label="Add New LS Company"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_ls_companies"
+        android:name="com.yamatoapps.lightandsoundbooking.ui.ViewLSCompanies"
+        android:label="View LS Companies"
+        tools:layout="@layout/fragment_dashboard" />
+    
+</navigation>

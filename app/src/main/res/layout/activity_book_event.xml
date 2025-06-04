@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_sound_bg"
+    android:orientation="vertical"
+    android:gravity="center_vertical|top"
+    tools:context=".BookEvent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Book Event"
+        app:titleTextColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/lvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="30dp"
+        android:background="#EDEAFF"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Event" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Event Name"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvEventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Venue" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Enter venue here... "
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvVenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Date of event" />
+
+        <Button
+            android:id="@+id/btnEventDate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#EDEAFF"
+            android:fontFamily="@font/poppins"
+            android:text="Select event date here..."
+            android:textAlignment="textStart"
+            android:textColor="#101010"
+            app:cornerRadius="4dp"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp"
+            app:iconSize="30dp"
+            app:iconTint="#191919"
+            app:strokeColor="#272727"
+            app:strokeWidth=".75dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Payment" />
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:enabled="false"
+            android:hint="Description"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnConfirmBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="#1E2340"
+            android:fontFamily="@font/poppins"
+            android:inputType="numberDecimal|number"
+            android:text="CONFIRM BOOKING"
+            app:cornerRadius="2dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

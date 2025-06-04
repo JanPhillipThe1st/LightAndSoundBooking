@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@drawable/ls_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:fontFamily="@font/montserrat_medium"
+        android:padding="10dp"
+        android:text="Light and Sound \n Booking App"
+        android:textAlignment="center"
+        android:textColor="#202327"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678" />
+
+    <LinearLayout
+        android:id="@+id/lvLogin"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#EDEAFF"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/poppins"
+            android:padding="5dp"
+            android:text="Hello there! log in to continue"
+            android:textColor="#121212"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Username"
+            android:layout_marginTop="8dp"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Enter Password"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvPassword"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:fontFamily="@font/poppins"
+                android:inputType="text|textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="#1E2340"
+            android:fontFamily="@font/poppins"
+            android:text="Login"
+            app:cornerRadius="2dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

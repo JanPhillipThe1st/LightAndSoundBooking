@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchLightandSound">
+
+    <LinearLayout
+        android:id="@+id/llSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_rect"
+            android:fontFamily="@font/montserrat_medium"
+            android:padding="10dp"
+            android:text="Light and Sound \n Booking App"
+            android:textAlignment="center"
+            android:textColor="#202327"
+            android:textSize="10sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="262dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAlignment="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search..." />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rect"
+            android:paddingVertical="10dp"
+            app:srcCompat="@drawable/baseline_screen_search_desktop_24" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gvCard"
+        android:layout_width="409dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:numColumns="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llSearchBar" />
+</LinearLayout>

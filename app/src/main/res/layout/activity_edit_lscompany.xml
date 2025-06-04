@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_sound_bg"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context=".EditLSCompany">
+
+    <LinearLayout
+        android:id="@+id/lvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="30dp"
+        android:background="#EDEAFF"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/poppins"
+            android:padding="5dp"
+            android:text="Edit Light and Sound Company"
+            android:textColor="#121212"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <ImageView
+            android:id="@+id/ivLSImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/baseline_upload_file_24" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Company Name"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvLSName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Description"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvLSDescription"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:fontFamily="@font/poppins" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Rating" />
+
+        <RatingBar
+            android:id="@+id/rbLSRating"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:isIndicator="false"
+            android:max="5"
+            android:numStars="5"
+            android:progressTint="#FB9F01"
+            android:rating="5"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="#1E2340"
+            android:fontFamily="@font/poppins"
+            android:text="UPDATE"
+            app:cornerRadius="2dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
